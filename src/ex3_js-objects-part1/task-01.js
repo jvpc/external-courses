@@ -1,7 +1,7 @@
 'use strict'
 var person = {}
-person.name = 'Мария'
-person.age = 21
-person['Любимый вид спорта'] = 'Воздушная гимнастика'
+person.name = 'Константин'
+person.age = 26
+person['Любимый стиль музыки'] = 'Джаз'
 delete person.age
 console.log(person)
