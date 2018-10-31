@@ -1,8 +1,5 @@
 'use strict'
-var arr;
-var result;
-var i;
-var key;
+var arr, result, i, key;
 function taskEleven(str) {
   arr = str.split('');
   result = {};
