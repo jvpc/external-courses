@@ -1,0 +1,21 @@
+#one {
+    border: 5px solid lightyellow
+}
+#two {
+    border-style:dashed;
+    border-color: darkblue;
+    border-width: 5px;
+}
+#three {
+    border-top: 5px double green;
+    border-bottom: 5px double green
+}
+#four {
+    outline: cyan dotted 5px;
+}
+#five {
+    border-top: 5px ridge red;
+    border-rigth: 5px ridge red;
+    border-bottom: 5px ridge red;
+    border-left: 5px ridge red;
+}

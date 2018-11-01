@@ -1,0 +1,22 @@
+#widthplay {
+    text-indent: 1cm;
+    width: 25%;
+    font-size: 18px;
+}
+
+.indent {
+    text-indent: 70px;
+}
+
+.Lists {
+    background-image: url(https://images.ua.prom.st/879620793_w640_h640_0003.jpg);
+}
+
+.Paragraphs {
+    border: 5px inset darkcyan;
+}
+
+p {
+   font-family: Roboto;
+}
+
