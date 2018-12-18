@@ -2,28 +2,30 @@ function Calculator() {
   this.result = 0;
   
   Calculator.prototype.add = function(num) {
-    if (num || num === 0) {
+    if (num != null) {
       this.result += num;
     }
     return this;
   };
   
   Calculator.prototype.subtract = function(num) {
-    if (num || num === 0) {
+    if (num != null) {
       this.result -= num;
     }
     return this;
   };
   
   Calculator.prototype.multiply = function(num) {
-    if (num || num === 0) {
+    if (num != null) {
       this.result *= num;
     }
     return this;
   };
   
    Calculator.prototype.divide = function(num) {
-    if (num || num === 0) {
+    if (num === 0) {
+      console.log('На ноль делить нельзя!')
+    } else if (num != null) {
       this.result /= num;
     }
     return this;
@@ -39,7 +41,7 @@ function Calculator() {
   };
   
    Calculator.prototype.setState = function(num) {
-    if (num) {
+    if (num != null) {
       this.result = num;
     }
     return this;
