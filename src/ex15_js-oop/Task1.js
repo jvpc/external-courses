@@ -26,7 +26,7 @@ let alpenGold = new Chocolate('Alpen Gold', 'Chocolate', 90, 522)
 
 class Gift {
   constructor(...gift) {
-    this.gift = [...gift]
+    this.gift = gift;
   }
 
   getWeight() {
