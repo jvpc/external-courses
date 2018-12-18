@@ -1,0 +1,18 @@
+#one {
+    border: 5px solid lightyellow
+}
+#two {
+    border-style:dashed;
+    border-color: darkblue;
+    border-width: 5px;
+}
+#three {
+    border-top: 5px double green;
+    border-bottom: 5px double green
+}
+#four {
+    outline: cyan dotted 5px;
+}
+#five {
+    box-shadow: 0 0 10px rgb(10, 10, 255);
+}
