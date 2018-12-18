@@ -1,0 +1,12 @@
+h2, p {
+	display: block;
+	margin: 5px;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+article {
+	background: url('https://d2jv9003bew7ag.cloudfront.net/uploads/Nils-M%C3%BCller-5.jpg');
+	background-size: cover;
+}

@@ -1,0 +1,28 @@
+#table-1 {
+	color: gray;
+}
+
+.header {
+	text-transform: uppercase;
+	background: #e3eaf3;
+}
+
+.customer {
+	text-transform: capitalize;
+}
+
+.first-row, .third-row, .fifth-row, .seventh-row {
+	background: #f2f6fa;
+}
+
+.second-row, .fourth-row, .sixth-row, .eigth-row {
+	background: #e3eaf3;
+}
+
+#table-1 td {
+	padding: 15px;
+}
+
+#table-1 tr:hover {
+	background: #e2e5e9;
+}
