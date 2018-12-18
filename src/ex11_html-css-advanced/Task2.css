@@ -1,0 +1,142 @@
+/*Задание 2.1*/
+
+.loader{
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  position: relative;
+  margin: 100px auto;
+}
+
+.loader:before, .loader:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.loader:before{
+  z-index: 100;
+  animation: spin 1s infinite;
+  border: 8px solid transparent;
+  border-top-color: blue;
+}
+
+.loader:after{
+  border: 8px solid lightgray;
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+/*Задание 2.2*/
+
+.wrapper {
+	margin:0 auto;
+    width:600px;
+    height:300px;
+	position:relative;
+}
+
+.block1,
+.block2{
+  height:100px;
+  width:10px;
+  background:red;
+  display: inline-block;
+  position:absolute;
+}
+
+.block1 {
+	animation: blockMove1 1s linear infinite alternate;
+	left: 0;
+}
+
+.block2 {
+	animation: blockMove2 1s linear infinite alternate;
+	right: 0;
+}
+
+.ball{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: blue;
+  margin-top:25%;
+  border-radius: 50%;
+  animation: ballMove 1s linear infinite alternate;
+}
+
+
+@keyframes ballMove{
+	from {left: 10px}
+	to {left: 580px;}
+}
+
+@keyframes blockMove1 {
+	from {margin-top: 100px}
+	to {margin-top: 300px}
+}
+
+@keyframes blockMove2 {
+	from {margin-top: 300px}
+	to {margin-top: 100px}
+}
+
+/*Задание 2.3*/
+
+.complex {
+    width: 80px;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 500% 500%;
+    height: 80px;
+    border-radius: 50%;
+	margin: 50px auto;
+	animation: myAnimation 15s ease infinite;
+}
+@keyframes myAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+    15% {
+        border-radius: 0px;
+    }
+    20% {
+        width: 80px;
+        height: 80px;
+        transform: skewX(0deg);
+    }
+    35% {
+        width: 150px;
+        height: 150px; 
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+	50% {
+		background-position: 100% 50%
+	}
+    65% {
+        transform: rotate(360deg);
+    }
+    80% {
+        border-radius: 0px;
+        width: 150px;
+        height: 150px;
+    }
+    100% {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        transform: rotate(360deg);
+		background-position: 0% 50%;
+    }
+}
