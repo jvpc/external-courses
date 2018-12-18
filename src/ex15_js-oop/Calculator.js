@@ -2,28 +2,28 @@ function Calculator() {
   this.result = 0;
   
   Calculator.prototype.add = function(num) {
-    if (num !== undefined) {
+    if (num || num === 0) {
       this.result += num;
     }
     return this;
   };
   
   Calculator.prototype.subtract = function(num) {
-    if (num !== undefined) {
+    if (num || num === 0) {
       this.result -= num;
     }
     return this;
   };
   
   Calculator.prototype.multiply = function(num) {
-    if (num !== undefined) {
+    if (num || num === 0) {
       this.result *= num;
     }
     return this;
   };
   
    Calculator.prototype.divide = function(num) {
-    if (num !== undefined) {
+    if (num || num === 0) {
       this.result /= num;
     }
     return this;
