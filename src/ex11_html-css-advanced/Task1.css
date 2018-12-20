@@ -1,0 +1,17 @@
+
+img {
+	display: block;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+}
+
+#one {
+	clip-path: circle(50% at 50% 50%);
+}
+
+
+#two{
+	-webkit-mask-size:200px;
+    -webkit-mask-image: url(cross.png);
+}

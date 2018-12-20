@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ex11_html-css-advanced"/>
+    <meta name="keywords" content="EPAM,HTML,CSS"/>
+    <meta name="author" content="Татьянкин Константин"/>
+    <link rel="stylesheet" href="Task4.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Task4</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-list"><a href="#">Help Center</a></div>
+      <i class="fas fa-circle"></i>
+      <div class="menu-list"><a href="#">Our Support</a></div>
+      <a href="#"><div class="user">
+        <div class="user-photo"></div>
+        <div class="user-name">John Doe</div>
+        <i class="fa fa-chevron-circle-down"></i>
+      </div></a>
+    </header>
+    <aside>
+      <div class="button-addbook">
+        <a href="#" class="addbook">
+          <i class="fas fa-plus"></i>
+          <span>Add a book</span>
+        </a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-book"></i>
+            <span>Now Reading</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-globe-americas"></i>
+            <span>Browse</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-shopping-cart"></i>
+            <span>Buy Books</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-star"></i>
+            <span>Favourite Books</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-th-list"></i>
+            <span>Whishlist</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="far fa-clock"></i>
+            <span>History</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="filters">
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-circle" id="first"></i>
+            <span>Must Read titles</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-circle" id="second"></i>
+            <span>Best Of List</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-circle" id="third"></i>
+            <span>Classic Novels</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-circle" id="forth"></i>
+            <span>Non Fiction</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="history">
+        <div class="history-message">
+          <i class="far fa-clock"></i>
+          <span>
+            You added <a href="#">Fight Club</a> by
+            <a href="#">Chuck Palahniuk</a> to your
+            <a href="#">Must Read Titles</a>.
+            <span class="message-time">
+              24 minutes ago
+            </span>
+          </span>
+        </div>
+        <div class="history-message">
+          <i class="far fa-clock"></i>
+          <span>
+            You added <a href="">The Trial</a> by
+            <a href="#">Franz Kafka</a> to your
+            <a href="#">Must Read Titles</a>.
+            <span class="message-time">
+              48 minutes ago
+            </span> 
+          </span>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <div class="search">
+        <div class="search-header">Browse Available Books</div>
+        <div class="search-menu">
+          <div class="filter">
+            <input type="radio" id="All" name="filter" checked>
+            <label for="All">All Books</label>
+            <input type="radio" id="Recent" name="filter">
+            <label for="Recent">Most Recent</label>
+            <input type="radio" id="Popular" name="filter">
+            <label for="Popular">Most Popular</label>
+            <input type="radio" id="Free" name="filter">
+            <label for="Free">Free Books</label>
+          </div>
+          <form action="#" class="search-field">
+            <input type="text" placeholder="Enter Keywords">
+            <button type="submit" name="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="library">
+        <div class="lib-element">
+          <div class="cover"></div>
+          <h3 class="name">Fight Club</h3>
+          <span class="author">by Chuck Palahniuk</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <div class="lib-element">
+          <div class="cover"></div>
+          <h3 class="name">The Trial</h3>
+          <span class="author">Franz Kafka</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="lib-element">
+          <div class="cover"></div>
+          <h3 class="name">The Nightingale</h3>
+          <span class="author">by Kristin Hannah</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="lib-element">
+          <div class="cover"></div>
+          <h3 class="name">The Broken Way</h3>
+          <span class="author">by Ann Voscamp</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="lib-element">
+          <div class="cover"></div>
+          <h3 class="name">Wonder</h3>
+          <span class="author">by R.J. Palacio</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="lib-element">
+          <div class="cover"></div>
+          <h3 class="name">Brave New World</h3>
+          <span class="author">by Aldus Huxley</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>            
+          </div>
+        </div>
+        <div class="lib-element">
+          <div class="cover"></div>
+          <h3 class="name">The Radium Girls</h3>
+          <span class="author">by Kate Moore</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>            
+          </div>
+        </div>
+        <div class="lib-element">
+          <div class="cover"></div>
+          <h3 class="name">A Clockwork</h3>
+          <span class="author">by Anthony Burgess</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>  
+          </div>
+        </div>
+        <div class="lib-element">
+          <div class="cover"></div>
+          <h3 class="name">Furthermore</h3>
+          <span class="author">by Tahereh Mafi</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i> 
+          </div>
+        </div>
+        <div class="lib-element">
+          <div class="cover"></div>
+          <h3 class="name">The Hobbit</h3>
+          <span class="author">by J.R.R. Tolkien</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <ul class="footer-buttons">
+        <li>
+          <a href="#"><i class="fa fa-question-circle"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-cog"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

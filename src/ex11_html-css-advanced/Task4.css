@@ -1,0 +1,407 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  font-size: 13px;
+  color: #78829d;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+header, footer {
+  max-width: 1950px;
+  min-width: 1000px;
+  width: 100%;
+  height: 45px;
+  background-color: #2f364a;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header, footer, aside {
+  position: fixed;
+}
+
+header {
+  top: 0px;
+}
+
+footer {
+  bottom: 0px;
+}
+
+.menu-list {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-circle {
+  margin: 21px 0px;
+  font-size: 6px;
+  color: #19202e;
+}
+
+header>a {
+  display: flex;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  background-color: #15a4fa;
+  justify-content: center;
+}
+
+.user-photo {
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-image: url("https://i.ibb.co/FW1X3dm/userpic.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.user-name {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+}
+
+.fa-chevron-circle-down {
+  color: white;
+}
+
+aside {
+  width: 200px;
+  background-color: #19202E;
+  display: flex;
+  flex-direction: column;
+  top: 45px;
+  bottom: 45px;
+  left: 0px;
+  overflow-y: auto;
+}
+
+aside > div {
+  margin-top: 4px;
+  background-color: #1F2637;
+  border-top: 1px solid #282F41;
+  border-bottom: 1px solid #141824;
+}
+
+.button-addbook {
+  margin-top: 0;
+  height: 100px;
+}
+
+.addbook {
+  display: flex;
+  background-color: #f2795a;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.addbook i, .addbook span {
+  color: white;
+  margin-left: 16px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.addbook:active {
+  position: relative;
+  top: 3px;
+}
+
+.menu {
+  height: 230px;
+}
+
+.menu ul {
+margin-top: 10px;
+}
+
+.menu li {
+  height: 38px;
+  margin-left: 10px;
+  list-style: none;
+}
+
+.menu li a, .filters li a {
+  display: block;
+  height: 100%;
+}
+
+.menu li:hover i, .menu li:hover span, .filters li:hover span {
+  color: white;
+}
+
+.menu li span {
+  margin-left: 10px;
+}
+
+.filters {
+  height: 150px;
+}
+
+.filters li {
+  list-style: none;
+  margin-left: 13px;
+  height: 35px;
+}
+
+.filters li span {
+  margin-left: 13px;
+}
+
+.filters #first {
+  color: #e24b65;
+}
+
+.filters #second {
+  color: #fdaa00;
+}
+
+.filters #third {
+  color: #00bedc;
+}
+
+.filters #forth {
+  color: #7571ca;
+}
+
+.history {
+  border-bottom: none;
+  flex: 1 1 auto;
+}
+
+.history-message {
+  margin-top: 30px;
+  margin-left: 10px;
+  display: flex;
+}
+
+.history-message > span {
+  display: block;
+  margin: 0px 12px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.history-message span > a {
+  color: #97b3ce;
+  font-size: 12px;
+}
+
+.history-message span > span {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.history-message a:hover {
+  color: white;
+}
+
+main {
+  position: fixed;
+  top: 45px;
+  left: 200px;
+  bottom: 45px;
+  right: 0px;
+}
+
+main .search {
+  background-color: #eef1f7;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-header {
+  font-size: 25px;
+  color: #565d73;
+  border-bottom: 1px solid #DADFEA;
+  padding: 20px;
+}
+
+.search-menu {
+  border-bottom: 1px solid #DADFEA;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.filter input {
+  display: none;
+}
+
+.filter label {
+  cursor: pointer;
+  padding: 5px 10px;;
+  font-size: 12px;
+}
+
+.filter input[type=radio]:checked + label, .filter input[type=radio]:hover + label{
+  background-color: #97B3CE;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.search-field input{
+  margin-right: 20px;
+  width: 300px;
+  padding: 8px 20px;
+  border: 1px solid #C7CDDB;
+  border-radius: 15px;
+}
+
+.search-field button {
+  border: none;
+  background: none;
+  margin-left: -60px;
+  cursor: pointer;
+}
+
+.search-field button i {
+  font-size: 14px;
+}
+
+.library {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 175px;
+  right: 0;
+  bottom: 45px;
+  left: 200px;
+  overflow-y: auto;
+  padding: 30px 25px;;
+}
+
+.lib-element {
+  width: 200px;
+  height: 360px;
+  margin: 10px;
+}
+
+.lib-element .cover {
+  width: 200px;
+  height: 275px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.lib-element .name {
+  color: #444c63;
+  font-size: 16px;
+  padding: 8px 0px;
+}
+
+.lib-element .author {
+  color: #6f7d95;
+}
+
+.lib-element .rating {
+  margin-top: 10px;
+}
+
+.lib-element:nth-child(1) .cover {
+  background-image: url("https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/3933/9780393355949.jpg");
+}
+
+.lib-element:nth-child(2) .cover {
+  background-image: url("https://static.my-shop.ru/product/3/333/3325848.jpg");
+}
+
+.lib-element:nth-child(3) .cover {
+  background-image: url("http://www.jsfashionista.com/wp-content/uploads/2017/01/The-Nightingale-Book.jpg");
+}
+
+.lib-element:nth-child(4) .cover {
+  background-image: url("https://anoregoncottage.com/wp-content/uploads/2018/01/broken.jpg");
+}
+
+.lib-element:nth-child(5) .cover {
+  background-image: url("https://anoregoncottage.com/wp-content/uploads/2018/01/wonder.jpg");
+}
+
+.lib-element:nth-child(6) .cover {
+  background-image: url("https://anoregoncottage.com/wp-content/uploads/2018/01/brave.jpg");
+}
+
+.lib-element:nth-child(7) .cover {
+  background-image: url("https://anoregoncottage.com/wp-content/uploads/2018/01/radium.jpg");
+}
+
+.lib-element:nth-child(8) .cover {
+  background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/06/06/12/clockwork-orange.jpg?w660");
+}
+
+.lib-element:nth-child(9) .cover {
+  background-image: url("https://images.randomhouse.com/cover/9781101994764");
+}
+
+.lib-element:nth-child(10) .cover {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbpo4Sf3ZYNt3TO27MYGWFqQ1X5zrqB8RzVNpW4_egB6hbintC");
+}
+
+.lib-element:hover .cover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
+
+.lib-element i {
+  color: #ffab00;
+}
+
+footer {
+ position: fixed;
+ bottom: 0;
+}
+
+footer .footer-buttons {
+  background-color: #1F2637;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-buttons li {
+  height: 45px;
+  width: 55px;
+}
+
+.footer-buttons li:last-child {
+  background-color: #15a4fa;
+}
+
+.footer-buttons i {
+  font-size: 15px;
+  color: white;
+  margin: 15px 20px;
+}

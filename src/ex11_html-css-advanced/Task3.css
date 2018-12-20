@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+form {
+	max-width: 500px;
+	display: flex;
+    flex-direction: column;
+	position: relative;
+    margin: 100px auto;
+	padding: 20px;
+	border-radius: 5px;
+	border-top: 3px solid #434a52;
+	border-bottom: 3px solid #434a52;
+}
+label {
+    position: absolute; 
+    transition: all .2s linear; 
+	color: lightgray;
+	font-family: Arial;
+}
+
+input {
+	padding: 15px;
+	border: none;
+	font: 1em Arial;
+	line-height: 32px;
+}
+
+div {
+	display: flex;
+	width: 100%;
+}
+
+#title, #description {
+	width: 100%;
+}
+
+#price, #location {
+	width: 50%;
+	border-top: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+#price {
+	border-right: 1px solid #E5E5E5;
+}
+
+label[for="location"] {
+	top: 36%;
+	left: 51%;
+}
+
+input:invalid + label {
+	margin-top: 15px;
+	margin-left: 15px;
+	opacity: 0; 
+}
+input:valid + label {
+	margin-top: 0px;
+	font-size: 0.8em;
+	opacity: 1; 
+}
+input:focus {
+	outline: none;
+}
+input:focus + label { 
+	color: #139dd7;
+}
