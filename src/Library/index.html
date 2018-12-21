@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ex11_html-css-advanced"/>
+    <meta name="keywords" content="EPAM,HTML,CSS"/>
+    <meta name="author" content="Татьянкин Константин"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="menu-list"><a href="#">Help Center</a></div>
+        <i class="fa fa-circle"></i>
+        <div class="menu-list"><a href="#">Our Support</a></div>
+        <a href="#"><div class="user">
+          <div class="user-photo"></div>
+          <div class="user-name">John Doe</div>
+          <i class="fa fa-chevron-circle-down"></i>
+        </div></a>
+      </header>
+      <aside>
+        <div class="button-addbook">
+          <a href="#" class="addbook">
+            <i class="fa fa-plus"></i>
+            <span>Add a book</span>
+          </a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-book"></i>
+              <span>Now Reading</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-globe"></i>
+              <span>Browse</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-shopping-cart"></i>
+              <span>Buy Books</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-star"></i>
+              <span>Favourite Books</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-th-list"></i>
+              <span>Whishlist</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-clock-o"></i>
+              <span>History</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="filters ">
+          <ul>
+            <li>
+              <div class="genre"><i class="fa fa-circle" id="first"></i>
+              <span class="genre">Must Read Titles</span></div>
+            </li>
+            <li>
+              <div class="genre"><i class="fa fa-circle" id="second"></i>
+              <span class="genre">Best Of List</span></div>
+            </li>
+            <li>
+              <div class="genre"><i class="fa fa-circle" id="third"></i>
+              <span class="genre">Classic Novels</span></div>
+            </li>
+            <li>
+              <div class="genre"><i class="fa fa-circle" id="forth"></i>
+              <span class="genre">Non Fiction</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="history">
+          <div class="history-message">
+            <i class="fa fa-clock-o"></i>
+            <span>
+              You added <a href="#">Fight Club</a> by
+              <a href="#">Chuck Palahniuk</a> to your
+              <a href="#">Must Read Titles</a>.
+              <span class="message-time">
+                24 minutes ago
+              </span>
+            </span>
+          </div>
+          <div class="history-message">
+            <i class="fa fa-clock-o"></i>
+            <span>
+              You added <a href="">The Trial</a> by
+              <a href="#">Franz Kafka</a> to your
+              <a href="#">Must Read Titles</a>.
+              <span class="message-time">
+                48 minutes ago
+              </span> 
+            </span>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <div class="search">
+          <div class="search-header">Browse Available Books</div>
+          <div class="search-menu">
+            <div class="filter">
+              <input type="radio" id="All" name="filter" checked>
+              <label for="All">All Books</label>
+              <input type="radio" id="Recent" name="filter">
+              <label for="Recent">Most Recent</label>
+              <input type="radio" id="Popular" name="filter">
+              <label for="Popular">Most Popular</label>
+              <input type="radio" id="Free" name="filter">
+              <label for="Free">Free Books</label>
+            </div>
+            <form action="#" class="search-field">
+              <input type="text" placeholder="Enter Keywords">
+              <button type="submit" name="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="library"></div>
+      </main>
+      <footer>
+        <ul class="footer-buttons">
+          <li>
+            <a href="#"><i class="fa fa-question-circle"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-cog"></i></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <div class="background"></div>
+    <form class='book_form'>
+      <i class="fa fa-times"></i>
+      <span class="head">ADD A BOOK</span>
+      <span>Title: </span>
+      <input type="text" required id="Title">
+      <span>Genres: </span>
+      <input type="text" required id="Genres">
+      <span>Author's firstname: </span>
+      <input type="text" required id="FName">
+      <span>Author's lastname: </span>
+      <input type="text" required id="LName">
+      <span>Price: </span>
+      <input type="number" required id="Price">
+      <span>Book cover (URL): </span>
+      <input type="url" id="Cover">
+      <span>Rating (1-5): </span>
+      <input type="text" required pattern="[1-5]" id="Rating">
+      <input type="submit" value="Add">
+    </form>
+    <div class="notification">Book has been successfully added!</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
