@@ -1,0 +1,54 @@
+div {
+	width: 400px;
+	height: 200px;
+}
+
+.one {
+	margin: 50px;
+	background-color: #60B88D;
+	box-shadow: 10px 10px 0 0 #90CDAF, 20px 20px 0 0 #BFE3D1;
+}
+
+.two {
+	position: relative;
+	background-color: #BFE3D1;
+	margin: 50px 70px;
+}
+.block1 {
+	position: absolute;
+	background-color: #90CDAF;
+	top: -10px;
+	left: -10px;
+}
+.block2 {
+	position: absolute;
+	background-color: #60B88D;
+	top: -10px;
+	left: -10px;
+}
+
+.three {
+	position: relative;
+	background-color: #60B88D;
+	margin: 50px;
+}
+.three::before {
+	content: '';
+	width: 400px;
+	height: 200px;
+	background-color: #90CDAF;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: -1;
+}
+.three::after {
+	content: '';
+	width: 400px;
+	height: 200px;
+	background-color: #BFE3D1;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: -2;
+}
