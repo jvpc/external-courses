@@ -1,0 +1,27 @@
+table {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+ td, th {
+	border: 1px solid black;
+}
+
+.table-header {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+label {
+	display: block;
+	margin: 15px 0px;
+}
+
+label input {
+	margin-left: 5px;
+}
+
+p label {
+	display: inline;
+}
+

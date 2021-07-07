@@ -1,0 +1,43 @@
+header {
+	overflow:hidden;
+	background: rgb(181,220,179);
+	margin-bottom: 5px;
+}
+
+h1 {
+	float: left;
+}
+
+.menu-1 {
+	float: right;
+	width: 20%;
+	line-height: 80px;
+	font-size: 24px;
+	border-left: 2px solid white;
+}
+
+footer {
+	background: rgb(181,220,179);
+}
+
+iframe {
+    width: 100%;
+    background: lightgray;
+}
+
+ul {
+    display: block;
+    float: left;
+    width: 15%;
+	height: 200px;
+    margin: 0 2px 0 0;
+    background: gray;
+}
+
+ul li:first-child {
+	margin-top: 50px;
+}
+
+.page {
+    display: inline-block;
+}

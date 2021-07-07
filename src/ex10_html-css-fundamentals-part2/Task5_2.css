@@ -1,0 +1,29 @@
+table:last-child {
+	color: gray;
+	margin-top: 20px;
+}
+
+table:last-child th {
+	text-transform: uppercase;
+	background: #e3eaf3;
+}
+
+table:last-child  td:first-child {
+	text-transform: capitalize;
+}
+
+table:last-child tr:nth-child(even) {
+	background: #f2f6fa;
+}
+
+table:last-child tr:nth-child(odd) {
+	background: #e3eaf3;
+}
+
+table:last-child td {
+	padding: 15px;
+}
+
+table:last-child tr:hover {
+	background: #e2e5e9;
+}

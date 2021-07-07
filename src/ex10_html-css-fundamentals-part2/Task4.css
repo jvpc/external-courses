@@ -1,0 +1,114 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #333;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+header {
+	background-color: #222;
+	width: 100%;
+	display: flex;
+    justify-content: center; 
+}
+
+a {
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 16px; 
+	text-decoration: none;
+}
+
+
+header ul li {
+	display: inline-block;
+	width: 100px;
+} 
+
+a:hover {
+	color: red;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+}
+
+aside {
+	background-color: #222;
+	display: flex;
+	align-items: center;
+	min-height: calc(100vh - 80px);
+}
+
+aside  ul{
+	list-style: none;
+	margin: 0 -15%;
+}
+
+article {
+	background: url('https://d2jv9003bew7ag.cloudfront.net/uploads/Alex-Fakso-5.jpg');
+	background-size: cover;
+	flex: 1;
+	min-height: 800px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: calc(100vh - 80px);
+}
+
+div {
+	background-color: #222;
+	color: #222;
+}
+
+.btn {
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 500% 500%;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	letter-spacing: 1.3px;
+	padding: 16px 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+	animation: gradient 15s ease infinite;
+}
+
+footer {
+	background-color: #222;	
+	width: 100%;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 800px) {
+  body {
+    margin: 1rem auto;
+    max-width: 60rem;
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}

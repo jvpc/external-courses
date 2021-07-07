@@ -1,0 +1,11 @@
+article {
+	background: url('https://d2jv9003bew7ag.cloudfront.net/uploads/Martha-Cooper1.jpg');
+	background-size: cover;
+}
+
+p{
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 20px; 
+}
